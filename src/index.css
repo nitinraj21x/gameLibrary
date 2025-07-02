@@ -13,6 +13,21 @@ html, body, #root {
   padding: 0;
 }
 
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .game-library-text {
+    font-size: clamp(1.5rem, 8vw, 3rem) !important;
+  }
+}
+
 
 
 /*------------------------GameLibInfo----------------------------*/
@@ -101,4 +116,48 @@ html, body, #root {
   opacity: 0.8;
 }
 
+/* Mobile game card optimizations */
+@media (max-width: 768px) {
+  .gameBox {
+    transition: transform 0.2s ease;
+  }
+  
+  .gameBox:active {
+    transform: scale(0.95);
+  }
+  
+  .gameBox:hover {
+    box-shadow: 0px 0px 8px 3px #ffffff;
+  }
+}
+
 /*------------------------GameLister----------------------------*/
+
+/*------------------------Mobile Utilities----------------------------*/
+@layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+  
+  .safe-area-inset {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* Prevent zoom on double tap for iOS */
+@media (max-width: 768px) {
+  button, input, select, textarea {
+    font-size: 16px;
+  }
+  
+  .no-zoom {
+    touch-action: manipulation;
+  }
+}

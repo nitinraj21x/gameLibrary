@@ -10,12 +10,14 @@ import ParticleBackground from "./Components/Background/ParticleBackground";
 
 export default function App() {
     return (
-        <div className="relative min-h-screen">
+        <div className="relative min-h-screen overflow-x-hidden">
             <ParticleBackground />
-            <div className="relative z-10 overflow-x-hidden">
+            <div className="relative z-10 w-full">
                 <GameLibInfo/>
                 <GameListBlocks/>
-                <FeaturedSlider />
+                <div className="hidden sm:block">
+                    <FeaturedSlider />
+                </div>
                 <GameLister />
             </div>
             <ScrollToTop />

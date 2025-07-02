@@ -126,9 +126,9 @@ const GameCard = ({ game }) => {
                     e.target.src = fallbackImageUrl;
                 }}
             />
-            <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/80 to-transparent p-4">
+            <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/80 to-transparent p-2 sm:p-4">
                 <h3 
-                    className="text-xl font-bold text-center mb-2" 
+                    className="text-xs sm:text-xl font-bold text-center mb-1 sm:mb-2" 
                     style={{
                         fontFamily: 'Orbitron, monospace',
                         color: '#00ff88',
@@ -142,7 +142,7 @@ const GameCard = ({ game }) => {
                     {game.name}
                 </h3>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-1 sm:p-4 hidden sm:block">
                 <div className="flex flex-wrap gap-1">
                     {game.tag.map((tag, index) => (
                         <span 
@@ -163,31 +163,31 @@ const GameCard = ({ game }) => {
         
         {/* Popup Modal */}
         {showPopup && (
-            <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50" onClick={() => setShowPopup(false)}>
-                <div className="bg-gray-900 rounded-xl max-w-4xl w-full mx-4 flex overflow-hidden relative border-2 border-cyan-500 shadow-2xl shadow-cyan-500/20" onClick={(e) => e.stopPropagation()}>
+            <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-2 sm:p-4" onClick={() => setShowPopup(false)}>
+                <div className="bg-gray-900 rounded-xl max-w-4xl w-full mx-2 sm:mx-4 flex flex-col sm:flex-row overflow-hidden relative border-2 border-cyan-500 shadow-2xl shadow-cyan-500/20 max-h-[90vh] sm:max-h-none" onClick={(e) => e.stopPropagation()}>
                     <button 
                         onClick={() => {
                             setCloseClicked(true);
                             setTimeout(() => setShowPopup(false), 200);
                         }} 
-                        className={`absolute top-4 right-4 z-10 bg-gray-800 rounded-full w-8 h-8 flex items-center justify-center border border-cyan-500 hover:bg-gray-700 transition-all duration-300 ${closeClicked ? 'animate-close-click' : 'animate-close-float'}`}
+                        className={`absolute top-2 right-2 sm:top-4 sm:right-4 z-10 bg-gray-800 rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center border border-cyan-500 hover:bg-gray-700 transition-all duration-300 touch-manipulation ${closeClicked ? 'animate-close-click' : 'animate-close-float'}`}
                     >
                         <div className={`relative w-4 h-4 ${closeClicked ? 'animate-lines-spin' : ''}`}>
                             <div className="absolute top-1/2 left-0 w-full h-0.5 bg-cyan-400 transform -translate-y-1/2 rotate-45"></div>
                             <div className="absolute top-1/2 left-0 w-full h-0.5 bg-cyan-400 transform -translate-y-1/2 -rotate-45"></div>
                         </div>
                     </button>
-                    <img src={game.altSrc} alt={game.name} className="w-1/2 h-96 object-cover border-r border-cyan-500" onError={(e) => { e.target.src = fallbackImageUrl; }} />
-                    <div className="w-1/2 p-6 relative bg-gradient-to-br from-gray-900 to-gray-800">
-                        <h2 className="text-2xl font-bold mb-4 text-cyan-300 text-shadow-glow">{game.name}</h2>
-                        <div className="mb-4">
+                    <img src={game.altSrc} alt={game.name} className="w-full sm:w-1/2 h-48 sm:h-96 object-cover border-b sm:border-b-0 sm:border-r border-cyan-500" onError={(e) => { e.target.src = fallbackImageUrl; }} />
+                    <div className="w-full sm:w-1/2 p-4 sm:p-6 relative bg-gradient-to-br from-gray-900 to-gray-800 overflow-y-auto">
+                        <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-cyan-300 text-shadow-glow">{game.name}</h2>
+                        <div className="mb-3 sm:mb-4">
                             {game.tag.map((tag, index) => (
-                                <span key={index} className={`${tagColors[currentShape]} text-white text-sm px-3 py-1 rounded-full mr-2 mb-2 inline-block transition-colors duration-500 border border-white/20 shadow-lg`}>{tag}</span>
+                                <span key={index} className={`${tagColors[currentShape]} text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-full mr-1 sm:mr-2 mb-1 sm:mb-2 inline-block transition-colors duration-500 border border-white/20 shadow-lg`}>{tag}</span>
                             ))}
                         </div>
-                        <p className="text-gray-300 leading-relaxed">{game.description || 'No description available.'}</p>
+                        <p className="text-gray-300 leading-relaxed text-sm sm:text-base mb-12 sm:mb-0">{game.description || 'No description available.'}</p>
                         <button 
-                            className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br ${colors[currentShape]} text-white flex items-center justify-center transition-all duration-500 hover:scale-110 ${isClicked ? 'animate-splash' : ''}`}
+                            className={`absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br ${colors[currentShape]} text-white flex items-center justify-center transition-all duration-500 hover:scale-110 touch-manipulation ${isClicked ? 'animate-splash' : ''}`}
                             style={{
                                 borderRadius: shapes[currentShape],
                                 boxShadow: '0 4px 15px rgba(59, 130, 246, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.3)',
@@ -200,7 +200,7 @@ const GameCard = ({ game }) => {
                                 setTimeout(() => setIsClicked(false), 300);
                             }}
                         >
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <svg width="16" height="16" className="sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M8 5v14l11-7z"/>
                             </svg>
                         </button>

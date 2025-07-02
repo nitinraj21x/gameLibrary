@@ -109,10 +109,10 @@ const FeaturedSlider = () => {
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen font-inter relative">
+    <div className="flex justify-center items-center min-h-[60vh] sm:min-h-screen font-inter relative px-4">
       <div 
-        className="w-[300px] h-[160px]"
-        style={{ perspective: '1000px' }}
+        className="w-[250px] h-[140px] sm:w-[300px] sm:h-[160px]"
+        style={{ perspective: '800px' }}
       >
         <div 
           ref={carouselRef}
@@ -124,11 +124,11 @@ const FeaturedSlider = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className={`carousel-item absolute w-[300px] h-[160px] backdrop-blur-[10px] border border-white/18 shadow-[0_0px_20px_10px_rgba(0,0,0)] transition-transform duration-300 origin-center ${index === frontSlide ? 'cursor-pointer group' : ''}`}
+              className={`carousel-item absolute w-[250px] h-[140px] sm:w-[300px] sm:h-[160px] backdrop-blur-[10px] border border-white/18 shadow-[0_0px_20px_10px_rgba(0,0,0)] transition-transform duration-300 origin-center ${index === frontSlide ? 'cursor-pointer group' : ''}`}
               onMouseEnter={() => index === frontSlide && setIsPaused(true)}
               onMouseLeave={() => index === frontSlide && setIsPaused(false)}
               style={{
-                transform: `rotateY(${index * (360 / items.length)}deg) translateZ(500px)`,
+                transform: `rotateY(${index * (360 / items.length)}deg) translateZ(${window.innerWidth < 640 ? '400px' : '500px'})`,
                 willChange: 'transform',
                 backfaceVisibility: 'hidden'
               }}
@@ -141,7 +141,7 @@ const FeaturedSlider = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 text-white" style={{ transform: 'translateZ(0)' }}>
                 <h3 
-                  className={`absolute bottom-0 left-0 right-0 text-xl text-center p-4 transition-all duration-300 ${getGameStyles(item.name).font} ${index === frontSlide ? 'group-hover:top-0 group-hover:left-0 group-hover:right-auto group-hover:bottom-auto group-hover:text-left group-hover:p-2' : ''}`}
+                  className={`absolute bottom-0 left-0 right-0 text-sm sm:text-xl text-center p-2 sm:p-4 transition-all duration-300 ${getGameStyles(item.name).font} ${index === frontSlide ? 'group-hover:top-0 group-hover:left-0 group-hover:right-auto group-hover:bottom-auto group-hover:text-left group-hover:p-2' : ''}`}
                   style={{ 
                     ...TEXT_STYLES,
                     WebkitTextStroke: getGameStyles(item.name).stroke
@@ -157,19 +157,19 @@ const FeaturedSlider = () => {
                     </span>
                   ))}
                 </h3>
-                <p className={`text-sm line-clamp-2 text-center opacity-0 transition-opacity duration-300 absolute top-8 left-2 right-2 ${index === frontSlide ? 'group-hover:opacity-100' : ''}`} style={TEXT_STYLES}>{item.description}</p>
+                <p className={`text-xs sm:text-sm line-clamp-2 text-center opacity-0 transition-opacity duration-300 absolute top-6 sm:top-8 left-2 right-2 ${index === frontSlide ? 'group-hover:opacity-100' : ''}`} style={TEXT_STYLES}>{item.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
       
-      <div className="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col gap-2">
+      <div className="absolute right-2 sm:right-8 top-1/2 -translate-y-1/2 flex flex-col gap-2">
         {items.map((_, index) => (
           <button
             key={index}
             onClick={() => handleSlideClick(index)}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full touch-manipulation ${
               index === frontSlide 
                 ? 'bg-white scale-125' 
                 : 'bg-white/40'

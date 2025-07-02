@@ -66,10 +66,10 @@ export default function GameListBlocks() {
   }
 
   return (
-    <section className="bg-transparent flex flex-col items-center justify-center px-4 py-6">
+    <section className="bg-transparent flex flex-col items-center justify-center px-2 sm:px-4 py-4 sm:py-6">
       {/* Special Tags Section */}
-      <div className="w-full max-w-7xl mb-6">
-        <div className="grid grid-cols-4 gap-3 sm:gap-6">
+      <div className="w-full max-w-7xl mb-4 sm:mb-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 md:gap-6">
           {specialGenres.map((genre) => {
             const handleGenreClick = () => {
               const element = document.getElementById(`genre-${genre.toLowerCase()}`);
@@ -85,14 +85,14 @@ export default function GameListBlocks() {
               <div 
                 key={genre}
                 onClick={handleGenreClick}
-                className="relative w-full h-16 bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400 text-white font-bold rounded-lg overflow-hidden group cursor-pointer transform hover:scale-105 transition-all duration-500 flex items-center justify-center">
+                className="relative w-full h-12 sm:h-16 bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400 text-white font-bold rounded-lg overflow-hidden group cursor-pointer transform hover:scale-105 active:scale-95 transition-all duration-300 sm:duration-500 flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-sm"></div>
                 <div className="absolute inset-[2px] bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400 rounded-lg"></div>
                 <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-center"></div>
                 <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-pink-500 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-center delay-100"></div>
                 <div className="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-b from-transparent via-purple-500 to-transparent scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-center delay-200"></div>
                 <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-transparent via-cyan-400 to-transparent scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-center delay-300"></div>
-                <span className="relative z-20 drop-shadow-lg text-sm font-black tracking-widest uppercase group-hover:animate-pulse" style={{fontFamily: 'Orbitron, "Bebas Neue", "Arial Black", sans-serif'}}>
+                <span className="relative z-20 drop-shadow-lg text-xs sm:text-sm font-black tracking-wide sm:tracking-widest uppercase group-hover:animate-pulse" style={{fontFamily: 'Orbitron, "Bebas Neue", "Arial Black", sans-serif'}}>
                   {genre.split('').map((letter, i) => (
                     <span key={i} className="inline-block group-hover:animate-bounce" style={{animationDelay: `${i * 100}ms`}}>{letter}</span>
                   ))}
@@ -103,9 +103,9 @@ export default function GameListBlocks() {
         </div>
       </div>
 
-      {/* Regular Tags Section - 1x8 Grid */}
-      <div className="w-full max-w-7xl">
-        <div className="grid grid-cols-8 grid-rows-1 gap-3 sm:gap-6">
+      {/* Regular Tags Section - Responsive Grid */}
+      <div className="w-full max-w-7xl hidden sm:block">
+        <div className="grid grid-cols-6 md:grid-cols-8 gap-2 md:gap-3 lg:gap-6">
           {regularGenres.map((genre, index) => {
             const handleGenreClick = () => {
               const element = document.getElementById(`genre-${genre.toLowerCase()}`);
@@ -121,7 +121,7 @@ export default function GameListBlocks() {
               <div 
                 key={genre}
                 onClick={handleGenreClick}
-                className="relative w-full h-12 bg-gradient-to-r from-slate-800 via-gray-800 to-slate-900 text-green-400 font-semibold rounded-md overflow-hidden group cursor-pointer hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                className="relative w-full h-12 bg-gradient-to-r from-slate-800 via-gray-800 to-slate-900 text-green-400 font-semibold rounded-md overflow-hidden group cursor-pointer hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
                 <div className="absolute inset-[1px] bg-gradient-to-r from-slate-800 via-gray-800 to-slate-900 rounded-md"></div>
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
