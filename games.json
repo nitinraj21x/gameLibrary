@@ -1,0 +1,331 @@
+{
+    "games":[
+        {
+            "name":"Forza 5",
+            "tag": ["Singleplayer", "Racing", "Open World", "Multiplayer"],
+            "src":"./slideImages/forza5.jpg",
+            "altSrc":"./slideImages/forza51.jpg",
+            "description":"Forza Horizon 5 is an open-world racing game set in a fictional representation of Mexico. Players explore a vast and diverse map, participate in races and challenges, customize cars, and experience dynamic weather and seasons. The game features a campaign mode, online multiplayer, and a robust toolset for creating custom content. "
+        },
+        
+        {
+            "name":"AGE OF EMPIRES 1",
+            "tag": ["Singleplayer", "RTS", "Multiplayer"],
+            "src":"./slideImages/aoe1.jpg",
+            "altSrc":"./slideImages/aoe11.jpg",
+            "description":"Age of Empires is a real-time strategy game where players build civilizations from the Stone Age to the Iron Age. Command armies, gather resources, and advance through historical periods to conquer enemies."
+        },
+        {
+            "name":"AGE OF EMPIRES 2",
+            "tag": ["Singleplayer", "RTS", "Multiplayer"],
+            "src":"./slideImages/aoe2.jpg",
+            "altSrc":"./slideImages/aoe21.jpg",
+            "description":"Age of Empires II is a medieval real-time strategy game featuring 13 civilizations. Players build towns, manage resources, and command armies through historical campaigns and multiplayer battles."
+        },
+        
+        {
+            "name":"Forza 4",
+            "tag": ["Singleplayer", "Racing", "Open World", "Featured"],
+            "src":"./slideImages/forza4.jpg",
+            "altSrc":"./slideImages/forza41.jpg",
+            "description":"Forza Horizon 4 is an open-world racing game set in historic Britain. Players explore a vast map with dynamic seasons, participate in races and challenges, customize cars, and experience changing weather conditions."
+        },
+        {
+            "name":"AGE OF MYTHOLOGY",
+            "tag": ["Singleplayer", "RTS", "Multiplayer"],
+            "src":"./slideImages/aom.jpg",
+            "altSrc":"./slideImages/aom1.jpg",
+            "description":"Age of Mythology is a real-time strategy game based on ancient mythologies. Players command civilizations inspired by Greek, Egyptian, and Norse cultures, using mythical creatures and god powers in battle."
+        },
+        
+        {
+            "name":"AGE OF EMPIRES 3",
+            "tag": ["Singleplayer", "RTS", "Multiplayer"],
+            "src":"./slideImages/aoe3.jpg",
+            "altSrc":"./slideImages/aoe31.jpg",
+            "description":"Age of Empires III is set during the colonial era, featuring European powers exploring and colonizing the Americas. Players manage home cities, trade routes, and advanced military units."
+        },
+        {
+            "name":"AGE OF EMPIRES 4",
+            "tag": ["Singleplayer", "RTS", "Multiplayer"],
+            "src":"./slideImages/aoe4.jpg",
+            "altSrc":"./slideImages/aoe41.jpg",
+            "description":"Age of Empires IV returns to the medieval setting with updated graphics and gameplay. Features historical campaigns, asymmetric civilizations, and strategic combat across land and sea."
+        },
+        
+        {
+            "name":"Golf 2k21",
+            "tag": ["Singleplayer", "Sports"],
+            "src":"./slideImages/golf.jpg",
+            "altSrc":"./slideImages/golf1.jpg",
+            "description":"PGA Tour 2K21 is a realistic golf simulation featuring licensed PGA Tour courses and players. Includes career mode, course designer, and online multiplayer tournaments."
+        },
+        
+        {
+            "name":"Amoung US",
+            "tag": ["Featured", "Multiplayer"],
+            "src":"./slideImages/aUS.jpg",
+            "altSrc":"./slideImages/aUS1.jpg",
+            "description":"Among Us is a multiplayer social deduction game where players work together to maintain a spaceship while identifying hidden impostors among the crew."
+        },
+        
+        {
+            "name":"Borderlands 3",
+            "tag": ["RPG", "Singleplayer", "Shooter", "Multiplayer", "Casual", "Cooperative"],
+            "src":"./slideImages/bl3.jpg",
+            "altSrc":"./slideImages/bl31.jpg",
+            "description":"Borderlands 3 is a chaotic first-person shooter RPG featuring billions of guns, four new Vault Hunters, and cooperative gameplay across multiple planets in the Borderlands universe."
+        },
+        {
+            "name":"Burnout Paradise",
+            "tag": ["Singleplayer", "Racing", "Featured"],
+            "src":"./slideImages/burnOut.jpg",
+            "altSrc":"./slideImages/burnOut1.jpg",
+            "description":"Burnout Paradise is an open-world arcade racing game set in Paradise City. Features high-speed racing, spectacular crashes, and seamless online multiplayer integration."
+        },
+        
+        {
+            "name":"Call of DOODY",
+            "tag": ["Singleplayer", "Shooter", "Multiplayer", "Featured", "Cooperative"],
+            "src":"./slideImages/cod.jpg",
+            "altSrc":"./slideImages/cod1.jpg",
+            "description":"Call of Duty is a first-person shooter franchise featuring military combat scenarios. Includes single-player campaigns, competitive multiplayer modes, and cooperative gameplay."
+        },
+        {
+            "name":"Cricket",
+            "tag": ["Singleplayer", "Sports"],
+            "src":"./slideImages/cric.jpg",
+            "altSrc":"./slideImages/cric1.jpg",
+            "description":"Cricket simulation game featuring realistic gameplay mechanics, international teams, and various game modes including tournaments, career mode, and quick matches."
+        },
+        
+        {
+            "name":"Counter-Strike",
+            "tag": ["Shooter", "Multiplayer", "Featured"],
+            "src":"./slideImages/cs2.jpg",
+            "altSrc":"./slideImages/cs21.jpg",
+            "description":"Counter-Strike is a tactical first-person shooter where teams of terrorists and counter-terrorists compete in objective-based rounds requiring strategy, teamwork, and precise aim."
+        },
+        {
+            "name":"Cyberpunk 2077",
+            "tag": ["RPG", "Singleplayer", "Shooter", "Open World"],
+            "src":"./slideImages/cPunk.jpg",
+            "altSrc":"./slideImages/cPunk1.jpg",
+            "description":"Cyberpunk 2077 is an open-world RPG set in the dystopian Night City. Players customize their character V and navigate a story-driven adventure in a high-tech, low-life future."
+        },
+        
+        {
+            "name":"Doom Eternal",
+            "tag": ["Singleplayer", "Shooter", "Casual"],
+            "src":"./slideImages/doomE.jpg",
+            "altSrc":"./slideImages/doomE1.jpg",
+            "description":"Doom Eternal is a fast-paced first-person shooter where players battle demons across Earth and beyond as the Doom Slayer, featuring intense combat and heavy metal soundtrack."
+        },
+        
+        {
+            "name":"Defence Of The Ancients",
+            "tag": ["RTS", "Multiplayer", "Featured"],
+            "src":"./slideImages/dota.jpg",
+            "altSrc":"./slideImages/dota1.jpg",
+            "description":"Defence of the Ancients (DotA) is a multiplayer online battle arena (MOBA) mod for Warcraft III. Players control heroes with unique abilities and work in teams to destroy the opposing team's Ancient structure."
+        },
+        
+        {
+            "name":"FIFA 23",
+            "tag": ["Singleplayer", "Sports", "Multiplayer", "Cooperative"],
+            "src":"./slideImages/fifa.jpg",
+            "altSrc":"./slideImages/fifa1.jpg",
+            "description":"FIFA 23 is a football simulation game featuring realistic gameplay, licensed teams and leagues, career mode, Ultimate Team, and online multiplayer. Experience authentic matches and new features in the latest FIFA installment."
+        },
+        {
+            "name":"Weeb Impact",
+            "tag": ["RPG", "Multiplayer"],
+            "src":"./slideImages/genImpact.jpg",
+            "altSrc":"./slideImages/genImpact1.jpg",
+            "description":"Weeb Impact is an open-world action RPG inspired by anime aesthetics. Players explore a fantasy world, collect characters, battle enemies, and complete quests in a vibrant multiplayer environment."
+        },
+        
+        {
+            "name":"God Of War",
+            "tag": ["RPG", "Singleplayer", "Featured"],
+            "src":"./slideImages/gow.jpg",
+            "altSrc":"./slideImages/gow1.jpg",
+            "description":"God of War is an action-adventure game following Kratos and his son Atreus on a journey through Norse mythology. Experience intense combat, epic storytelling, and breathtaking visuals."
+        },
+        {
+            "name":"Hollow Knight",
+            "tag": ["Singleplayer", "RPG"],
+            "src":"./slideImages/hknight.jpg",
+            "altSrc":"./slideImages/hknight1.jpg",
+            "description":"Hollow Knight is a challenging action-adventure game set in a vast, interconnected world. Players explore ancient ruins, battle creatures, and uncover secrets in the mysterious kingdom of Hallownest."
+        },
+        
+        {
+            "name":"Heroes Of Storm",
+            "tag": ["RTS", "Multiplayer"],
+            "src":"./slideImages/hos.jpg",
+            "altSrc":"./slideImages/hos1.jpg",
+            "description":"Heroes of the Storm is a team-based MOBA by Blizzard, featuring iconic heroes from across their franchises. Players battle in diverse battlegrounds with unique objectives and strategic gameplay."
+        },
+        {
+            "name":"Nier Automata",
+            "tag": ["Singleplayer", "Casual", "RPG"],
+            "src":"./slideImages/nAuto.jpg",
+            "altSrc":"./slideImages/nAuto1.jpg",
+            "description":"Nier Automata is an action RPG set in a post-apocalyptic world. Players control androids in a war against alien machines, experiencing fast-paced combat and a deep, philosophical story."
+        },
+        
+        {
+            "name":"League of Losers",
+            "tag": ["RTS", "Multiplayer"],
+            "src":"./slideImages/lol.jpg",
+            "altSrc":"./slideImages/lol1.jpg",
+            "description":"League of Losers is a multiplayer online battle arena game where teams of unique champions battle to destroy the enemy base. Features strategic gameplay, character progression, and competitive matches."
+        },
+        
+        {
+            "name":"Mortal Kombat",
+            "tag": ["Featured", "Multiplayer", "Fighting", "Singleplayer"],
+            "src":"./slideImages/mk.jpg",
+            "altSrc":"./slideImages/mk1.jpg",
+            "description":"Mortal Kombat is a legendary fighting game series known for its brutal combat, iconic characters, and cinematic story modes. Compete in intense battles with signature fatalities and special moves."
+        },
+        
+        {
+            "name":"Marvel Rivals",
+            "tag": ["Shooter", "Multiplayer", "Featured", "Cooperative"],
+            "src":"./slideImages/mRivals.jpg",
+            "altSrc":"./slideImages/mRivals1.jpg",
+            "description":"Marvel Rivals is a team-based shooter featuring Marvel superheroes and villains. Players engage in cooperative and competitive matches, utilizing unique powers and teamwork to achieve victory."
+        },
+        {
+            "name":"Italiam Plumber and the blue rodent",
+            "tag": ["Singleplayer", "Sports", "Multiplayer", "Cooperative"],
+            "src":"./slideImages/msO.jpg",
+            "altSrc":"./slideImages/msO1.jpg",
+            "description":"Italiam Plumber and the blue rodent is a crossover platformer featuring iconic characters inspired by classic video game mascots. Players team up for cooperative adventures and competitive mini-games."
+        },
+        
+        {
+            "name":"NBA 2K23",
+            "tag": ["Singleplayer", "Sports"],
+            "src":"./slideImages/nba.jpg",
+            "altSrc":"./slideImages/nba1.jpg",
+            "description":"NBA 2K23 is a basketball simulation game featuring realistic gameplay, current NBA teams and players, MyCareer mode, MyTeam, and online multiplayer. Experience authentic basketball action and immersive presentation."
+        },
+        {
+            "name":"Need for Speed: Hot Pursuit",
+            "tag": ["Singleplayer", "Racing"],
+            "src":"./slideImages/nfshp.jpg",
+            "altSrc":"./slideImages/nfshp1.jpg",
+            "description":"Need for Speed: Hot Pursuit is a high-speed racing game featuring exotic supercars and intense police chases. Players can choose to be either a racer trying to evade law enforcement or a cop pursuing speeders through scenic routes."
+        },
+        
+        {
+            "name":"Need for Speed: Most Wanted",
+            "tag": ["Singleplayer", "Racing"],
+            "src":"./slideImages/nfsmw.jpg",
+            "altSrc":"./slideImages/nfsmw1.jpg",
+            "description":"Need for Speed: Most Wanted is an open-world racing game where players compete to become the most wanted racer while evading police. Features intense street racing, car customization, and thrilling police pursuits."
+        },
+        {
+            "name":"Olympic 2012",
+            "tag": ["Singleplayer", "Sports"],
+            "src":"./slideImages/oly.jpg",
+            "altSrc":"./slideImages/oly1.jpg",
+            "description":"London 2012 Olympics is the official video game of the 2012 Summer Olympics. Players compete in various Olympic events including track and field, swimming, cycling, and more, striving for gold medals."
+        },
+        
+        {
+            "name":"Red Dead Redemption 2",
+            "tag": ["Singleplayer", "Shooter", "Casual", "Open World", "RPG"],
+            "src":"./slideImages/rdr2.jpg",
+            "altSrc":"./slideImages/rdr21.jpg",
+            "description":"Red Dead Redemption 2 is an epic tale of life in America's unforgiving heartland. Players follow Arthur Morgan and the Van der Linde gang as they rob, fight, and steal their way across the rugged frontier."
+        },
+
+        {
+            "name":"Rocket League",
+            "tag": ["Multiplayer"],
+            "src":"./slideImages/rleague.jpg",
+            "altSrc":"./slideImages/rleague1.jpg",
+            "description":"Rocket League combines soccer with high-powered rocket cars in this physics-based multiplayer game. Players compete in fast-paced matches, performing aerial stunts and teamwork to score goals."
+        },
+        {
+            "name":"Starcraft 2",
+            "tag": ["Singleplayer", "RTS", "Multiplayer"],
+            "src":"./slideImages/sc.jpg",
+            "altSrc":"./slideImages/sc1.jpg",
+            "description":"StarCraft II is a real-time strategy game set in a sci-fi universe. Players command one of three distinct races - Terran, Protoss, or Zerg - in epic battles across the galaxy with strategic gameplay."
+        },
+        
+        {
+            "name":"FUS RO DAH",
+            "tag": ["RPG", "Singleplayer", "Open World"],
+            "src":"./slideImages/skyrim.jpg",
+            "altSrc":"./slideImages/skyrim1.jpg",
+            "description":"The Elder Scrolls V: Skyrim is an epic fantasy RPG where players become the Dragonborn, a legendary hero with the power to absorb dragon souls. Explore a vast open world filled with quests and mysteries."
+        },
+        
+        {
+            "name":"Stickman Fighting",
+            "tag": ["Fighting", "Singleplayer"],
+            "src":"./slideImages/sFight.jpg",
+            "altSrc":"./slideImages/sFight1.jpg",
+            "description":"Stickman Fighting is a simple yet engaging fighting game featuring stick figure characters. Players engage in combat using various moves and combos in fast-paced battles with intuitive controls."
+        },
+        
+        {
+            "name":"Smite",
+            "tag": ["Multiplayer", "RTS"],
+            "src":"./slideImages/smite.jpg",
+            "altSrc":"./slideImages/smite1.jpg",
+            "description":"Smite is a third-person MOBA where players control gods and mythological figures from various pantheons. Teams compete in strategic battles using unique abilities and teamwork to destroy the enemy's base."
+        },
+        {
+            "name":"TEKKEN 7",
+            "tag": ["Singleplayer", "Fighting", "Multiplayer"],
+            "src":"./slideImages/tekken.jpg",
+            "altSrc":"./slideImages/tekken1.jpg",
+            "description":"TEKKEN 7 is a 3D fighting game featuring the final chapter of the Mishima clan saga. Players master complex combos and fighting techniques with a diverse roster of fighters in intense martial arts combat."
+        },
+        
+        {
+            "name":"Tina Tina's Wonderlands",
+            "tag": ["Singleplayer", "Shooter", "RPG", "Multiplayer", "Cooperative"],
+            "src":"./slideImages/tt.jpg",
+            "altSrc":"./slideImages/tt1.jpg",
+            "description":"Tiny Tina's Wonderlands is a fantasy spin-off of Borderlands featuring magic, mayhem, and millions of weapons. Players embark on an unpredictable adventure through a tabletop RPG world brought to life."
+        },
+        {
+            "name":"Warcraft 3",
+            "tag": ["Singleplayer", "RTS", "Multiplayer"],
+            "src":"./slideImages/wc.jpg",
+            "altSrc":"./slideImages/wc1.jpg",
+            "description":"Warcraft III is a real-time strategy game set in the fantasy world of Azeroth. Players command armies of humans, orcs, undead, and night elves through epic campaigns that shaped the Warcraft universe."
+        },
+        
+        {
+            "name":"Witcher 3",
+            "tag": ["Singleplayer", "RPG", "Open World"],
+            "src":"./slideImages/witcher.jpg",
+            "altSrc":"./slideImages/witcher1.jpg",
+            "description":"The Witcher 3: Wild Hunt is an open-world RPG following Geralt of Rivia, a monster hunter searching for his adopted daughter. Features deep storytelling, meaningful choices, and a vast world filled with quests."
+        },
+        {
+            "name":"World of Warcraft",
+            "tag": ["Multiplayer", "RPG", "Open World", "Cooperative"],
+            "src":"./slideImages/wow.jpg",
+            "altSrc":"./slideImages/wow1.jpg",
+            "description":"World of Warcraft is a massively multiplayer online RPG set in the fantasy world of Azeroth. Players create characters, join guilds, complete quests, and participate in epic raids and PvP battles."
+        },
+        
+        {
+            "name":"WWE 2K23",
+            "tag": ["Singleplayer", "Fighting", "Multiplayer"],
+            "src":"./slideImages/wwe.jpg",
+            "altSrc":"./slideImages/wwe1.jpg",
+            "description":"WWE 2K23 is a professional wrestling simulation game featuring current WWE superstars and legends. Players can compete in various match types, create custom wrestlers, and experience storylines from WWE programming."
+        }
+    ]
+}
