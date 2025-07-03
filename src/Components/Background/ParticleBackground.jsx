@@ -43,8 +43,7 @@ const ParticleBackground = () => {
         this.targetSpeed = Math.sqrt(this.normalVx * this.normalVx + this.normalVy * this.normalVy);
         this.radius = Math.random() * 20 + 10;
         this.shape = Math.floor(Math.random() * 4);
-        this.gradientTime = Math.random() * Math.PI * 2;
-        this.gradientSpeed = Math.random() * 0.03 + 0.02;
+
         this.scrollVy = 0;
         this.opacityMultiplier = 1;
         this.baseX = this.x;
@@ -55,7 +54,7 @@ const ParticleBackground = () => {
 
       update() {
         if (isOpacityAnimating) {
-          this.opacityMultiplier = 0.3 + 0.7 * Math.abs(Math.sin(opacityAnimTime * 0.01 + this.gradientTime));
+          this.opacityMultiplier = 0.3 + 0.7 * Math.abs(Math.sin(opacityAnimTime * 0.01));
         } else {
           this.opacityMultiplier = 1;
         }
@@ -125,7 +124,7 @@ const ParticleBackground = () => {
           this.x += this.vx;
           this.y += this.vy + this.scrollVy;
         }
-        this.gradientTime += this.gradientSpeed;
+
 
         if (!isRotationAnimating) {
           if (this.x < 0 || this.x > canvas.width) {
@@ -144,25 +143,18 @@ const ParticleBackground = () => {
 
       draw() {
         const baseOpacity = 0.7 * this.opacityMultiplier;
-        const gradientFactor = 0.5 + Math.sin(this.gradientTime) * 0.5;
         ctx.lineWidth = this.radius * 0.4;
+        ctx.shadowColor = 'white';
+        ctx.shadowBlur = 10;
+        ctx.strokeStyle = `rgba(0, 0, 0, ${baseOpacity})`;
         
         if (this.shape === 0) {
-          const r = Math.floor(255 * (0.3 + gradientFactor * 0.7));
-          const g = Math.floor(20 * (0.3 + gradientFactor * 0.7));
-          const b = Math.floor(147 * (0.3 + gradientFactor * 0.7));
-          ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${baseOpacity})`;
           ctx.beginPath();
           ctx.arc(this.x, this.y, this.radius * 0.6, 0, Math.PI * 2);
           ctx.stroke();
         } else if (this.shape === 1) {
-          const g = Math.floor(100 * (0.3 + gradientFactor * 0.7));
-          const b = Math.floor(255 * (0.3 + gradientFactor * 0.7));
-          ctx.strokeStyle = `rgba(0, ${g}, ${b}, ${baseOpacity})`;
           ctx.strokeRect(this.x - this.radius * 0.7, this.y - this.radius * 0.7, this.radius * 1.4, this.radius * 1.4);
         } else if (this.shape === 2) {
-          const g = Math.floor(255 * (0.3 + gradientFactor * 0.7));
-          ctx.strokeStyle = `rgba(0, ${g}, 100, ${baseOpacity})`;
           ctx.beginPath();
           ctx.moveTo(this.x, this.y - this.radius * 0.8);
           ctx.lineTo(this.x + this.radius * 0.7, this.y + this.radius * 0.5);
@@ -170,8 +162,6 @@ const ParticleBackground = () => {
           ctx.closePath();
           ctx.stroke();
         } else {
-          const r = Math.floor(255 * (0.3 + gradientFactor * 0.7));
-          ctx.strokeStyle = `rgba(${r}, 50, 50, ${baseOpacity})`;
           ctx.beginPath();
           ctx.moveTo(this.x - this.radius * 0.6, this.y - this.radius * 0.6);
           ctx.lineTo(this.x + this.radius * 0.6, this.y + this.radius * 0.6);
@@ -179,6 +169,9 @@ const ParticleBackground = () => {
           ctx.lineTo(this.x - this.radius * 0.6, this.y + this.radius * 0.6);
           ctx.stroke();
         }
+        
+        ctx.shadowColor = 'transparent';
+        ctx.shadowBlur = 0;
       }
     }
 
